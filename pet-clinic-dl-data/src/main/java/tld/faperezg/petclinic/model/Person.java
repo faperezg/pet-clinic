@@ -1,6 +1,6 @@
 package tld.faperezg.petclinic.model;
 
-public class Person {
+public class Person extends BaseModel {
 
 	private String firstName;
 
