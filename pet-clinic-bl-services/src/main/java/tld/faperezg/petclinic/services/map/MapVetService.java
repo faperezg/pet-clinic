@@ -1,11 +1,11 @@
 package tld.faperezg.petclinic.services.map;
 
 import tld.faperezg.petclinic.model.Vet;
-import tld.faperezg.petclinic.services.CrudService;
+import tld.faperezg.petclinic.services.VetService;
 
 import java.util.Set;
 
-public class MapVetService extends AbstractMapService<Vet> implements CrudService<Vet, Long> {
+public class MapVetService extends AbstractMapService<Vet> implements VetService {
 
 	@Override
 	public void delete (Vet object) {

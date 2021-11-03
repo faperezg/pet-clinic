@@ -36,7 +36,7 @@
 		<!-- Pet Clinic -->
 		<dependency>
 			<groupId>tld.faperezg</groupId>
-			<artifactId>pet-clinic-dl-data</artifactId>
+			<artifactId>pet-clinic-bl-services</artifactId>
 			<version>${project.parent.version}</version>
 		</dependency>
 
