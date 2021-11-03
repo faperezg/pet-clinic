@@ -1,12 +1,12 @@
 package tld.faperezg.petclinic.model;
 
-public class Person {
+public abstract class Person extends BaseModel {
 
 	private String firstName;
 
 	private String lastName;
 
-	public Person () {
+	protected Person () {
 		super ();
 	}
 

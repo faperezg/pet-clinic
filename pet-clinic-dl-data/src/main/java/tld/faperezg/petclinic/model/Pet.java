@@ -2,7 +2,9 @@ package tld.faperezg.petclinic.model;
 
 import java.time.LocalDate;
 
-public class Pet {
+public class Pet extends BaseModel {
+
+	private static final long serialVersionUID = 1L;
 
 	public enum Type {
 		CAT (0),
