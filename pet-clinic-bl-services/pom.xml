@@ -10,4 +10,11 @@
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>pet-clinic-bl-services</artifactId>
 	<name>Pet Clinic - Core Services</name>
+	<dependencies>
+		<dependency>
+			<groupId>tld.faperezg</groupId>
+			<artifactId>pet-clinic-dl-data</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+	</dependencies>
 </project>
