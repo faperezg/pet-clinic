@@ -1,4 +1,4 @@
-package tld.faperezg.petclinic.services;
+package tld.faperezg.petclinic.services.exceptions;
 
 public class ServiceException extends RuntimeException {
 

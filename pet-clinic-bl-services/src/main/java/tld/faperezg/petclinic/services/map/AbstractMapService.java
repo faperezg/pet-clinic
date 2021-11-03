@@ -1,7 +1,7 @@
 package tld.faperezg.petclinic.services.map;
 
 import tld.faperezg.petclinic.model.BaseModel;
-import tld.faperezg.petclinic.services.ServiceException;
+import tld.faperezg.petclinic.services.exceptions.ServiceException;
 
 import java.util.Collections;
 import java.util.HashMap;
