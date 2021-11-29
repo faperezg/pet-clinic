@@ -1,6 +1,7 @@
 package tld.faperezg.petclinic.model;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class Pet extends BaseModel {
 
@@ -55,6 +56,34 @@ public class Pet extends BaseModel {
 
 	public void setOwner (Owner owner) {
 		this.owner = owner;
+	}
+
+	@Override
+	public boolean equals (Object o) {
+		if (this == o) {
+			return true;
+		}
+		if (o == null || getClass () != o.getClass ()) {
+			return false;
+		}
+		if (!super.equals (o)) {
+			return false;
+		}
+		Pet pet = (Pet) o;
+		return Objects.equals (birthDate, pet.birthDate) && type == pet.type;
+	}
+
+	@Override
+	public int hashCode () {
+		return Objects.hash (super.hashCode (), birthDate, type);
+	}
+
+	@Override
+	public String toString () {
+		return "Pet{" +
+			   "birthDate=" + birthDate +
+			   ", type=" + type +
+			   "} " + super.toString ();
 	}
 
 }
