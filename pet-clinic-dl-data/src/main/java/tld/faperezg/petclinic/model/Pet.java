@@ -70,12 +70,12 @@ public class Pet extends BaseModel {
 			return false;
 		}
 		Pet pet = (Pet) o;
-		return Objects.equals (birthDate, pet.birthDate) && type == pet.type;
+		return Objects.equals (birthDate, pet.birthDate) && type == pet.type && Objects.equals (owner, pet.owner);
 	}
 
 	@Override
 	public int hashCode () {
-		return Objects.hash (super.hashCode (), birthDate, type);
+		return Objects.hash (super.hashCode (), birthDate, type, owner);
 	}
 
 	@Override
@@ -83,6 +83,7 @@ public class Pet extends BaseModel {
 		return "Pet{" +
 			   "birthDate=" + birthDate +
 			   ", type=" + type +
+			   ", owner=" + owner +
 			   "} " + super.toString ();
 	}
 
